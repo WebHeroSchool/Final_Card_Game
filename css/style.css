@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 128px 0 0 105px;
+  min-width: 320px;
+  background: no-repeat url('../images/Background.png');
+  color: #fff;
+}
+
+.container_title {
+  font-size: 57px;
+  margin-bottom: 8px;
+}
+
+.container_text {
+  font-size: 19px;
+  margin-bottom: 57px;
+}
+
+.container_text_bold {
+  font-weight: bold;
+}
+
+.menu_level {
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 21px 44px;
+  position: relative;
+}
+
+.menu_level:focus::before {
+  content: '';
+  position: absolute;
+  top: 23px;
+  background: url('../images/Rectangle2.png');
+  width: 18px;
+  height: 18px;
+  background-size: 18px 18px;
+  margin: 0 17px 0 -44px;
+}
+
+.menu_levels {
+  margin-bottom: 140px;
+}
+
+.menu_start {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttom_text {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 28px 83px;
+  color: #fff;
+  text-decoration: none;
+  background: #d62b2e;
+  border-radius: 5px;
+}
+
+.start_cards {
+  margin-top: -138px;
+}
+
+.start_card_first {
+  margin: 0 -153px 30px 0;
+}
+
+.start_card_second {
+  margin-right: 58px;
+}
+
+.desk_light {
+  display: flex;
+  justify-content: center;
+  padding: 213px 0 317px 0;
+  margin-left: -105px;
+}
+
+.desk_card {
+  width: 218px;
+  height: 341px;
+  padding: 0 24px 24px 0;
+}
+
+.moved {
+  transform: rotateZ(-3deg) translateY(-35px);
+}
+
+.desk_medium {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 242px 242px 242px;
+  grid-template-rows: auto auto;
+  padding: 30px 0 136px 0;
+  margin-left: -77px;
+}
+
+.desk_hard {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 242px 242px 242px 242px 242px;
+  grid-template-rows: auto auto;
+  padding: 30px 0 136px 0;
+  margin-left: -94px;
+}
+
+.transformed {
+  transform: rotateY(360deg);
+  transition: transform 1s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.unhidden {
+  display: block;
+}
+
+@media screen and (max-width: 1169px) {
+  .start_card_second {
+    margin-right: 37px;
+  }
+
+  .desk_hard_card {
+    width: 193px;
+    height: 304px;
+  }
+
+  .desk_hard {
+    grid-template-columns: 217px 217px 217px 217px 217px;
+    margin-left: -25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .body {
+    margin: 60px 0 0 64px;
+  }
+
+  .container_title {
+    font-size: 41px;
+  }
+
+  .container_text {
+    font-size: 14px;
+  }
+
+  .buttom_text {
+    padding: 18px 31px;
+    font-size: 26px;
+  }
+
+  .start_card_first {
+    width: 194px;
+    margin: 0 -106px 31px 0;
+  }
+
+  .start_card_second {
+    width: 282px;
+  }
+
+  .menu_levels {
+    margin-bottom: 123px;
+  }
+
+  .menu_level {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: 28px;
+  }
+
+  .menu_level:hover::before {
+    width: 14px;
+    height: 14px;
+    top: 14px;
+    background-size: 14px 14px;
+    margin: 0 17px 0 -28px;
+  }
+
+  .desk_card {
+    width: 162px;
+    height: 257px;
+  }
+
+  .desk_light {
+    margin-left: -31px;
+  }
+
+  .desk_medium {
+    grid-template-columns: 186px 186px 186px;
+    margin-left: -41px;
+  }
+
+  .desk_hard {
+    grid-template-columns: 186px 186px 186px 186px 186px;
+    margin-left: 115px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .body {
+    margin: 45px 0 0 45px;
+  }
+
+  .container_title {
+    font-size: 25px;
+  }
+
+  .container_text {
+    font-size: 11px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .menu_levels {
+    margin-bottom: 59px;
+  }
+
+  .menu_level {
+    font-size: 20px;
+    margin: 0 0 7px 20px;
+  }
+
+  .menu_level:hover::before {
+    width: 10px;
+    height: 10px;
+    top: 8px;
+    background-size: 10px 10px;
+    margin: 0 0 0 -21px;
+  }
+
+  .buttom_text {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .start_cards {
+    margin-top: -62px;
+  }
+
+  .start_card_first {
+    width: 96px;
+    margin: 0 -58px 17px 0;
+  }
+
+  .start_card_second {
+    width: 138px;
+    margin-right: 5px;
+  }
+
+  .desk_card {
+    width: 79px;
+    height: 129px;
+    padding: 0 7px 7px 0;
+  }
+
+  .desk_medium {
+    grid-template-columns: 86px 86px 86px;
+    margin-left: -34px;
+  }
+
+  .desk_hard {
+    grid-template-columns: 73px 73px 73px 73px 73px;
+    margin-left: -30px;
+  }
+
+  .desk_hard_card {
+    width: 66px;
+    height: 109px;
+  }
+}
