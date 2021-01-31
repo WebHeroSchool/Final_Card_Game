@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head class='head'>
+    <meta charset='UTF-8'>
+    <title class='head_title'>CARD GAME</title>
+    <link rel='stylesheet' href='css/fonts.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  </head>
+  <body class='body'>
+    <header class='header'>
+      <section class='header_container'>
+        <h1 class='container_title'>Выберите уровень сложности:</h1>
+        <p class='container_text'> <span class='container_text_bold'> Выберите сложность и игра начнется. </span> Чем выше уровень - тем больше будет выборка карт. </p>
+      </section>
+    </header>
+    <main>
+      <article class='menu'>
+        <section class='menu_levels'>
+          <a href='#' class='menu_level menu_light'  onclick="return false;">Простой</a>
+          <a href='#' class='menu_level menu_medium'  onclick="return false;">Средний</a>
+          <a href='#' class='menu_level menu_hard'  onclick="return false;">Сложный</a>
+        </section>
+        <section class='menu_start'>
+          <section class='start_buttom'>
+            <a href='#' class='buttom_text'>Начать игру</a>
+        </section>
+        <section class='start_cards'>
+          <img class='start_card_first' src='images/start_card1.png' alt='card'>
+          <img class='start_card_second' src='images/start_card2.png' alt='card'>
+        </section>
+      </article>
+      <article class='desk hidden'></article>
+    </main>
+    <script type='text/JavaScript' src='./js/script.js'></script>
+  </body>
+</html>
