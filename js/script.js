@@ -63,7 +63,7 @@ const getDesk = function() {
   desk.classList.remove('hidden');
   let pictureOfCard = document.querySelectorAll('img.desk_card');
   
-  for (i = 0; i < pictureOfCard.length; i++) {
+  for (let i = 0; i < pictureOfCard.length; i++) {
     pictureOfCard[i].addEventListener('mouseover', toMove.bind(null, i, pictureOfCard));
     pictureOfCard[i].addEventListener('mouseout', toMoveBack.bind(null, i, pictureOfCard));
     pictureOfCard[i].addEventListener('click', toTransform.bind(null, i, pictureOfCard));
